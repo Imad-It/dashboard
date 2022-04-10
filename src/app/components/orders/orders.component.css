@@ -1,0 +1,67 @@
+.orders{
+  padding: 10px;
+  margin: 10px;
+  overflow-x: auto;
+  box-shadow: var(--main-shadow);
+  border-radius:var(--main-border-radius) ;
+  -webkit-border-radius:var(--main-border-radius) ;
+  -moz-border-radius:var(--main-border-radius) ;
+  -ms-border-radius:var(--main-border-radius) ;
+  -o-border-radius:var(--main-border-radius) ;
+}
+.orders div{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.orders div a{
+  display: block;
+  background-color: var(--main-background);
+  padding: 5px 10px;
+  cursor: pointer;
+  width: fit-content;
+  color: var(--main-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.orders table{
+  width: 100%;
+  border-collapse: collapse;/*Sehr Wichtig*/
+}
+.orders table th,
+.orders table td{
+  text-align: left;
+  padding-left: 10px;
+ }
+.orders table th:not(:last-child),
+.orders table td:not(:last-child){
+   min-width: 125px;
+}
+.orders table  tr{
+  height: 30px;
+  width: 100%;
+}
+.orders table  tr td>span{
+ color: white;
+ font-size: 0.5em;
+ font-weight: bold;
+ display: block;
+ text-align: center;
+ max-width: 60px;
+ padding: 3px;
+ border-radius: 8px;
+ -webkit-border-radius: 8px;
+ -moz-border-radius: 8px;
+ -ms-border-radius: 8px;
+ -o-border-radius: 8px;
+}
+.orders table tbody > tr:not(:last-child) {
+  border-bottom: 0.2px solid #adaaaa;
+}
+.orders table tbody tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+

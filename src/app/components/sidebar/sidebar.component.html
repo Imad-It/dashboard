@@ -1,0 +1,48 @@
+<nav class="sidebar" [ngStyle]="{'width':widthData}">
+  <ul>
+    <li>
+      <a>
+        <span (click)="changeWidth()">
+          <i class="fa fa-bars" aria-hidden="true" *ngIf="widthData==='50px'"></i>
+          <i class="fa fa-window-close" aria-hidden="true" *ngIf="widthData==='160px'"></i>
+        </span>
+        <span>Brand</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-home" aria-hidden="true"></i></span>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-users" aria-hidden="true"></i></span>
+        <span>Customers</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-comments" aria-hidden="true"></i></span>
+        <span>Messages</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-question" aria-hidden="true"></i></span>
+        <span>Help</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+        <span>Settings</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+        <span>Password</span></a>
+    </li>
+    <li>
+      <a>
+        <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+        <span>Sign Out</span></a>
+    </li>
+  </ul>
+</nav>
