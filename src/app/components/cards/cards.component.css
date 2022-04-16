@@ -1,37 +1,28 @@
-.cards{
+.cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.cards .card{
- position: relative;
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex:1;
- cursor: pointer;
- margin:20px 10px;
- padding: 20px;
- min-width: 200px;
- max-width: 250px;
- overflow: hidden;
- box-shadow: var(--main-shadow);
- transition: var(--main-transition);
- -webkit-transition: var(--main-transition);
- -moz-transition: var(--main-transition);
- -ms-transition: var(--main-transition);
- -o-transition: var(--main-transition);
- border-radius:var(--main-border-radius);
- -webkit-border-radius:var(--main-border-radius);
- -moz-border-radius:var(--main-border-radius);
- -ms-border-radius:var(--main-border-radius);
- -o-border-radius:var(--main-border-radius);
+
+.cards .card {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  cursor: pointer;
+  margin: 20px 10px;
+  padding: 20px;
+  min-width: 200px;
+  max-width: 250px;
+  overflow: hidden;
 }
-.cards .card::before{
-  content:"";
+
+.cards .card::before {
+  content: "";
   position: absolute;
-  top:0;
-  left:50%;
+  top: 0;
+  left: 50%;
   height: 4px;
   width: 0%;
   background-color: var(--main-background);
@@ -41,11 +32,12 @@
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.cards .card::after{
-  content:"";
+
+.cards .card::after {
+  content: "";
   position: absolute;
-  top:0;
-  right:50%;
+  top: 0;
+  right: 50%;
   height: 4px;
   width: 0%;
   background-color: var(--main-background);
@@ -55,16 +47,19 @@
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
-.cards .card:hover::before{
-  left:0;
+
+.cards .card:hover::before {
+  left: 0;
   width: 51%;
 }
-.cards .card:hover::after{
+
+.cards .card:hover::after {
   right: 0;
   width: 51%;
 }
-.cards .card:hover{
-  background-color:#ededed70;
+
+.cards .card:hover {
+  background-color: #ededed70;
   /* background-color: #f2f2f2; */
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
@@ -72,10 +67,12 @@
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
 }
-.cards .card span{
+
+.cards .card span {
   color: #adaaaa;
 }
-.cards .card .icon{
+
+.cards .card .icon {
   color: #adaaaa;
   font-size: 3.0em;
 }

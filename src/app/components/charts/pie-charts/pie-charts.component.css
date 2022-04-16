@@ -1,0 +1,11 @@
+.pie-charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pie-chart {
+  margin: 15px;
+  max-width: 490px;
+  overflow: hidden;
+}

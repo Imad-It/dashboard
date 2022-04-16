@@ -1,0 +1,15 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+app-orders {
+  min-width: 60%;
+  flex: 1;
+}
+
+app-customers {
+  flex: 1;
+}

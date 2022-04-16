@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
   background-color: var(--main-background);
   min-height: 100%;
   overflow: hidden;
@@ -8,11 +8,13 @@
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
- }
-.sidebar ul{
+}
+
+.sidebar ul {
   list-style: none;
 }
-.sidebar ul li{
+
+.sidebar ul li {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -22,10 +24,11 @@
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
-.sidebar ul li:not(:first-child):hover::before{
-  position:absolute;
+
+.sidebar ul li:not(:first-child):hover::before {
+  position: absolute;
   content: "";
-  top:-42%;
+  top: -42%;
   right: 0;
   width: 20px;
   height: 20px;
@@ -37,10 +40,11 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.sidebar ul li:not(:first-child):hover::after{
-  position:absolute;
+
+.sidebar ul li:not(:first-child):hover::after {
+  position: absolute;
   content: "";
-  bottom:-43%;
+  bottom: -43%;
   right: 0;
   width: 20px;
   height: 20px;
@@ -52,24 +56,35 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.sidebar ul li:first-child{
+
+.sidebar ul li:first-child {
   margin-bottom: 50px;
 }
-.sidebar ul li:not(:first-child):hover{
+
+.sidebar ul li:not(:first-child):hover {
   background-color: var(--main-color);
-  color:var(--main-background)
+  color: var(--main-background)
 }
-.sidebar ul li a{
-  color:var(--main-color);
+
+.sidebar ul li a {
+  font-weight: bold;
+  color: var(--main-color);
 }
-.sidebar ul li:not(:first-child):hover a{
+
+.sidebar ul li:not(:first-child):hover a {
   color: var(--main-background);
 }
-.sidebar ul li span>i{
+
+.sidebar ul li span>i {
   font-size: 1.3em;
   width: 40px;
 }
-.sidebar ul li span:last-child{
-  position:absolute;
+
+.sidebar ul li span:last-child {
+  position: absolute;
   line-height: 25px;
+}
+
+.active {
+  mix-blend-mode: difference;
 }

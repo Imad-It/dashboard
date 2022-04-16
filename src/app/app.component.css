@@ -9,7 +9,7 @@
   width: 57vw;
 }
 
-.container main>div {
+/* .container main>div {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -23,4 +23,4 @@
 
 .container app-customers {
   flex: 1;
-}
+} */
