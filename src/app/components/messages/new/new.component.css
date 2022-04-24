@@ -1,0 +1,36 @@
+.new {
+  margin: 20px;
+  padding: 10px;
+}
+
+.new div {
+  margin: 10px;
+}
+
+.new label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.new input,
+.new textarea {
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.new button {
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: var(--main-background);
+  border: none;
+  color: white;
+  font-size: 1.0em;
+  width: 120px;
+  cursor: pointer;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}

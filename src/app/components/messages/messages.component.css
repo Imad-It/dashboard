@@ -1,0 +1,110 @@
+.links {
+  margin: 20px;
+}
+
+.links a {
+  display: inline-block;
+  width: 120px;
+  border: 1.2px solid var(--main-background);
+  text-align: center;
+  padding: 5px;
+  margin: 0px 10px;
+  color: black;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.links>.active {
+  background-color: var(--main-background);
+  color: white
+}
+
+.messages {
+  padding: 10px;
+  margin: 20px;
+  overflow-x: scroll;
+}
+
+.messages table {
+  width: 100%;
+  border-collapse: collapse;
+  /*Sehr Wichtig*/
+}
+
+.messages table th,
+.messages table td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.messages table th:not(:last-child),
+.messages table td:not(:last-child) {
+  min-width: 125px;
+}
+
+.messages table tr {
+  height: 30px;
+  width: 100%;
+}
+
+.messages tbody tr {
+  cursor: pointer;
+}
+
+.messages table tr td>span {
+  color: white;
+  font-size: 0.5em;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  max-width: 60px;
+  padding: 3px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.messages table tbody>tr:not(:last-child) {
+  border-bottom: 0.2px solid #adaaaa;
+}
+
+.messages table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2
+}
+
+.messages table .from {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 30px;
+}
+
+.messages table .from i {
+  margin: 3px;
+  color: #b7a9a9;
+}
+
+.messages table .from i:nth-child(3) {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.messages table .icons {
+  opacity: 0;
+}
+
+.messages tbody tr:hover .icons {
+  opacity: 1;
+}
+
+.messages tbody tr:hover {
+  font-weight: bold;
+}
